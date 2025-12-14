@@ -1,23 +1,8 @@
 // This is the main plugin file
 /*
-SO FAR:
-    CREATES A FOLDER IN .runelite && CREATES A USERNAME FOLDER &&
-    CREATES A LIFETIME.TXT FILE && CREATES A SESSION.TXT FILE
-    CONFIGURATION CONTROLLED IN V0.15
-    NOTEPAD ADDED IN V0.20
-    TYPING SAVES AUTOMATICALLY IN V0.30
-    AUTOSAVE FUNCTION NOW WORKS, IT AUTO SAVES THE NOTES IN V0.30
-    MULTIPLE PROFILES CAN BE CREATED & REMEMBERED IN V0.33
-    CREATES A HISTORY.TXT FILE && LOGS GE OFFERS FOREVER IN V0.35
-
-    working on> logs amount accurately (buys for 2000 gp, actually buys for 1950gp should show for actual)
-    working on>
-    working on>
-    **version 0.36 >
-    DEBUGGING & TESTS:
-
+**version 0.40
  */
-package net.runelite.client.plugins.geLogPlugin;
+package MoolahOSRS.geLog;
 
 import com.google.inject.Provides;
 import lombok.extern.slf4j.Slf4j;
@@ -537,4 +522,5 @@ public class geLogPlugin extends Plugin {
             log.error("Failed writing to {}", file, e);
         }
     }
+
 }
